@@ -1,0 +1,14 @@
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\bin\Debug\net9.0\TesteDeMesa3.exe
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\bin\Debug\net9.0\TesteDeMesa3.deps.json
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\bin\Debug\net9.0\TesteDeMesa3.runtimeconfig.json
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\bin\Debug\net9.0\TesteDeMesa3.dll
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\bin\Debug\net9.0\TesteDeMesa3.pdb
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.AssemblyInfoInputs.cache
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.AssemblyInfo.cs
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.csproj.CoreCompileInputs.cache
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.dll
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\refint\TesteDeMesa3.dll
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.pdb
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.genruntimeconfig.cache
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\ref\TesteDeMesa3.dll
