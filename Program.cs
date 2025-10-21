@@ -49,6 +49,7 @@ public class Program
                     taxa /= 100;
                 }
                 periodoTotal=calc.converterData(periodoAno, periodoMes, periodoDia);
+                
                 calc.calcularJurosSemResgate(valorInicial, taxa, periodoTotal);
                 calc.calcularRendimentoMensal(valorInicial, calc.rendimentoBrutoTotal());
                 Console.Clear();
@@ -57,6 +58,7 @@ public class Program
                 Console.WriteLine($"Periodo e investimento de {periodoAno} - Anos | {periodoMes} - Meses | {periodoDia} - Dias");
                 Console.WriteLine($"Rendimento bruto: R${calc.rendimentoBrutoTotal():F2}");
                 Console.WriteLine($"Rendimento líquido total: R${calc.rendimentoLiquidoTotal():F2}");
+
                 calc.limparListas();
                 break;
 
@@ -116,10 +118,10 @@ public class Program
                 rendimentos=calc.calcularJurosComResgate(valorInicial, taxa, periodoTotal, resgateMensal, valorResgateMensal);
                 calc.calcularRendimentoMensal(valorInicial, calc.rendimentoBrutoTotal());
                 Console.Clear();
-                for(int i=0; i<periodoTotal; i++)
+                for(int i=1; i<=periodoTotal; i++)
                 {
                     Console.Write("\n\n\n");
-                    Console.WriteLine($"-------------------------ESTATISTICAS MÊS {i+1}-------------------------");
+                    Console.WriteLine($"-------------------------ESTATISTICAS MÊS {i}-------------------------");
                     if (resgateMensal.Contains(i))
                     {
                         Console.WriteLine($"Valor Inicial: R${(valorInicial - valorResgateMensal):F2}");
@@ -133,6 +135,16 @@ public class Program
                     Console.WriteLine($"Porcentagem da taxa: %{taxa * 100}");
                     Console.WriteLine($"Rendimento bruto: R${rendimentos[i]:F2}");
                  
+                }
+                if ((periodoTotal % 1) > 0)
+                {
+                    Console.Write("\n\n\n");
+                    Console.WriteLine($"-------------------------ESTATISTICAS MÊS {(int)periodoTotal + 1}-------------------------");
+                    
+                    Console.WriteLine($"Valor Inicial: R${valorInicial:F2}");
+
+                    Console.WriteLine($"Porcentagem da taxa: %{taxa * 100}");
+                    Console.WriteLine($"Rendimento bruto: R${rendimentos[(int)periodoTotal+1]:F2}");
                 }
                 break;
 

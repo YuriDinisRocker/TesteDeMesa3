@@ -35,8 +35,16 @@ namespace TesteDeMesa3
                 {
                     periodoCount = this.periodo - (this.periodo - (float)i);
                 }
-                    float resultado = this.valorInicial * (float)Math.Pow((1 + this.taxa), periodoCount);
+
+                float resultado = this.valorInicial * (float)Math.Pow((1 + this.taxa), periodoCount);
                 this.valorFinal = resultado;
+                this.valoresRendimentos.Add(this.valorFinal);
+            }
+            float resto = this.periodo - (int)this.periodo;
+            if (resto > 0)
+            {
+                float resultadoFinal = this.valorInicial * MathF.Pow(1 + this.taxa, this.periodo);
+                this.valorFinal = resultadoFinal;
                 this.valoresRendimentos.Add(this.valorFinal);
             }
             return valoresRendimentos;
@@ -59,17 +67,17 @@ namespace TesteDeMesa3
                     this.valorInicial -= resgate;
                 }
 
-                if (this.periodo - (float)id == 0)
-                {
-                    periodoCount = this.periodo;
-                }
-                else
-                {
-                    periodoCount = this.periodo - (this.periodo - (float)id);
-                }
+                periodoCount = id;
 
-                float resultado = this.valorInicial * (float)Math.Pow((1 + this.taxa), periodoCount);
+                float resultado = this.valorInicial *   MathF.Pow((1 + this.taxa), periodoCount);
                 this.valorFinal = resultado;
+                this.valoresRendimentos.Add(this.valorFinal);
+            }
+            float resto = this.periodo - (int)this.periodo;
+            if (resto > 0)
+            {
+                float resultadoFinal = this.valorInicial * MathF.Pow(1 + this.taxa, this.periodo);
+                this.valorFinal = resultadoFinal;
                 this.valoresRendimentos.Add(this.valorFinal);
             }
             return valoresRendimentos;

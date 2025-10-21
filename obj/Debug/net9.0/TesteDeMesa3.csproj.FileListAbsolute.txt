@@ -12,3 +12,4 @@ C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\refint\Te
 C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.pdb
 C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.genruntimeconfig.cache
 C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\ref\TesteDeMesa3.dll
+C:\Users\yurirocker\Desktop\TesteDeMesa3\TesteDeMesa3\obj\Debug\net9.0\TesteDeMesa3.sourcelink.json
