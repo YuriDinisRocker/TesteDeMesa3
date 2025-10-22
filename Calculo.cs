@@ -9,12 +9,9 @@ namespace TesteDeMesa3
 {
     internal class Calculo
     {
-        private float valorInicial;
-        private float valorFinal;
-        private float periodo;
-        private List<float> rendimentosMensais = new List<float>();
-        private float taxa;
-        private List<float> valoresRendimentos = new List<float>();
+        private float valorInicial, periodo, valorFinal, taxa;
+        private List<float> rendimentosMensais = new List<float>(), valoresRendimentos = new List<float>();
+         
 
         public Calculo()
         {
@@ -52,11 +49,11 @@ namespace TesteDeMesa3
         
         ////////////////////////////////////////////////////
 
-        public List<float> calcularJurosComResgate(float valorInicial, float taxa, float periodo, List<int> periodoResgate, float resgate)
+        public List<float> calcularJurosComResgate(float valorInicial, float taxa, float periodo, List<int> periodoResgate, List<float> resgate)
         {
             this.valorInicial = valorInicial; this.taxa = taxa; this.periodo = periodo; float periodoCount = 0;
             this.valoresRendimentos.Add(this.valorInicial);
-            float id = 0;
+            int id = 0; int idResgate = 0;
             for (int i = 1; i <= (int)periodo; i++)
             {
                 id++;
@@ -64,7 +61,8 @@ namespace TesteDeMesa3
                 if (periodoResgate.Contains(i))
                 {
                     id = 1;
-                    this.valorInicial -= resgate;
+                    this.valorInicial = this.valorFinal - resgate[idResgate];
+                    idResgate++;
                 }
 
                 periodoCount = id;
@@ -114,7 +112,10 @@ namespace TesteDeMesa3
             return rendimentosMensais.Sum();
         }
 
-
+        public float getValorInicial()
+        {
+            return this.valorInicial;
+        }
         public void limparListas()
         {
             rendimentosMensais.Clear();
